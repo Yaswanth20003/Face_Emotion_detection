@@ -1,3 +1,5 @@
+import os
+import gdown
 import cv2
 import numpy as np
 from tensorflow.keras.models import model_from_json
@@ -6,9 +8,24 @@ from tensorflow.keras.preprocessing.image import img_to_array
 class VideoCamera:
     def __init__(self):
         self.video = cv2.VideoCapture(0)
-        self.model = model_from_json(open("static/model.json", "r").read())
-        self.model.load_weights("static/model.h5")
+
+        model_path = "static/model.h5"
+        json_path = "static/model.json"
+
+        # Download model.h5 from Google Drive if it doesn't exist
+        if not os.path.exists(model_path):
+            print("Downloading model.h5 from Google Drive...")
+            url = "https://drive.google.com/uc?id=1MPql4BPEmMBw9y0XJP66kk8SFxaTxG7j"
+            gdown.download(url, model_path, quiet=False)
+
+        # Load model architecture and weights
+        self.model = model_from_json(open(json_path, "r").read())
+        self.model.load_weights(model_path)
+
+        # Load Haar Cascade
         self.face_cascade = cv2.CascadeClassifier("static/haarcascade_frontalface_default.xml")
+
+        # Define emotions
         self.emotions = ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
 
     def __del__(self):
