@@ -1,6 +1,7 @@
 Note : model.h5 was not directly pushed to this repu due to more memory(150). 
         You can find model.h5 here "https://drive.google.com/file/d/1MPql4BPEmMBw9y0XJP66kk8SFxaTxG7j/view?usp=drive_link"
 
+
 Face Emotion Detection System
 Project Overview
 This project is about detecting human emotions using their facial expressions with the help of Deep Learning (CNN model). The main purpose of this project is to help mentors track students' emotions during online classes like Google Meet. This helps mentors to know if students are happy, sad, or not paying attention.
