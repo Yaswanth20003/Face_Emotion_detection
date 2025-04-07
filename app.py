@@ -1,5 +1,7 @@
 from flask import Flask, render_template, Response
 from camera import VideoCamera
+import download_model
+
 
 app = Flask(__name__)
 
