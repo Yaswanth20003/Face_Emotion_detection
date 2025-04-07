@@ -1,4 +1,4 @@
-Note : model.h5 was not directly pushed to this repu due to more memory(150). 
+Note : model.h5 was not directly pushed to this repo due to more memory(150). 
         You can find model.h5 here "https://drive.google.com/file/d/1MPql4BPEmMBw9y0XJP66kk8SFxaTxG7j/view?usp=drive_link"
 
 
