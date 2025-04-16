@@ -6,9 +6,9 @@
 
 **Team Members:** Mr. Dosapati Yaswanth Guptha (B.Tech, CSBS) 3<sup>rd</sup> year
 
-# **Period of the project**: 2024 - April 2025
+**Period of the project**: 2024 - April 2025
 
-SURE ProEd PUTTAPARTHI, ANDHRA PRADESH
+# SURE ProEd PUTTAPARTHI, ANDHRA PRADESH
 
 ### **_DECLARATION_**
 
